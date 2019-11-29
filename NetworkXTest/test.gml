@@ -14,7 +14,7 @@ graph [
   ]
   node [
     id 3
-    label "Outcome"
+    label "Data Breach"
   ]
   node [
     id 4
@@ -39,51 +39,51 @@ graph [
   edge [
     source 0
     target 1
-    weight 0.5788342684423631
+    weight 0.717933897115801
   ]
   edge [
     source 0
     target 3
-    weight 0.8215134433123407
+    weight 0.5758098892762263
   ]
   edge [
     source 1
     target 3
-    weight 0.8025254545403563
+    weight 0.5992863935049704
   ]
   edge [
     source 2
     target 1
-    weight 0.28341088620679966
+    weight 0.3312455300665653
   ]
   edge [
     source 2
     target 3
-    weight 0.8986652077913028
+    weight 0.14249820741426644
   ]
   edge [
     source 4
     target 3
-    weight 0.8149338730455573
+    weight 0.18487050855114495
   ]
   edge [
     source 5
     target 3
-    weight 0.5514271888318363
+    weight 0.2076141811876394
   ]
   edge [
     source 6
     target 3
-    weight 0.7014599227072876
+    weight 0.5591044009692897
   ]
   edge [
     source 7
     target 3
-    weight 0.5077632129302814
+    weight 0.030982167394213223
   ]
   edge [
     source 8
     target 3
-    weight 0.8715243317280206
+    weight 0.022351735690993135
   ]
 ]
