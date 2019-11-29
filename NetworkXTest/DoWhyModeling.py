@@ -1,4 +1,5 @@
 import networkx as nx
+import matplotlib.pyplot as plt
 # Directed Graphs is more of what want, especially for causal modeling
 DG = nx.DiGraph()
 
@@ -20,3 +21,11 @@ print(list(DG.neighbors("Bug")))
 
 # Writes the gml file for us easily
 nx.write_gml(DG, "test.gml")
+
+#Drawing the graph with the Network X draw library
+options = {
+    'node_size': 1000000
+}
+nx.draw(DG, with_labels=True)
+
+plt.savefig("DirectedGraph.png")
