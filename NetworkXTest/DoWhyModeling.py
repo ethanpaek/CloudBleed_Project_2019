@@ -4,21 +4,21 @@ from random import random
 # Directed Graphs is more of what want, especially for causal modeling
 DG = nx.DiGraph()
 
-DG.add_weighted_edges_from([("Hacked", "Bug", random()),
-                            ("Malware", "Bug", random()),
-                            ("Hacked", "Data Breach", random()),
-                            ("Malware", "Data Breach", random()),
-                            ("Bug", "Data Breach", random()),
-                            ("Physical", "Data Breach", random()),
-                            ("Misuse", "Data Breach", random()),
-                            ("Error", "Data Breach", random()),
-                            ("Environment", "Data Breach", random()),
-                            ("Social", "Data Breach", random())
+DG.add_weighted_edges_from([("action.Hacking", "action.Bugs", random()),
+                            ("action.Malware", "action.Bugs", random()),
+                            ("action.Hacking", "action.Impact", random()),
+                            ("action.Malware", "action.Impact", random()),
+                            ("action.Bugs", "action.Impact", random()),
+                            ("action.Physical", "action.Impact", random()),
+                            ("action.Misuse", "action.Impact", random()),
+                            ("action.Error", "action.Impact", random()),
+                            ("action.Environmental", "action.Impact", random()),
+                            ("action.Social", "action.Impact", random())
                             ])
-print(DG.out_degree("Bug", weight='weight')) # total weight of edges directing out of "Bug" node
-print(DG.degree("Bug", weight='weight')) # total weight of edges coming in and out of "Bug" node
-print(list(DG.successors("Hacked")))
-print(list(DG.neighbors("Bug")))
+print(DG.out_degree("action.Bugs", weight='weight')) # total weight of edges directing out of "Bug" node
+print(DG.degree("action.Bugs", weight='weight')) # total weight of edges coming in and out of "Bug" node
+print(list(DG.successors("action.Hacking")))
+print(list(DG.neighbors("action.Bugs")))
 
 # Writes the gml file for us easily
 nx.write_gml(DG, "test.gml")

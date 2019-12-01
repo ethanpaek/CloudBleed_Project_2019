@@ -2,78 +2,78 @@ graph [
   directed 1
   node [
     id 0
-    label "Hacked"
+    label "action.Hacking"
   ]
   node [
     id 1
-    label "Bug"
+    label "action.Bugs"
   ]
   node [
     id 2
-    label "Malware"
+    label "action.Malware"
   ]
   node [
     id 3
-    label "Data Breach"
+    label "action.Impact"
   ]
   node [
     id 4
-    label "Physical"
+    label "action.Physical"
   ]
   node [
     id 5
-    label "Misuse"
+    label "action.Misuse"
   ]
   node [
     id 6
-    label "Error"
+    label "action.Error"
   ]
   node [
     id 7
-    label "Environment"
+    label "action.Environmental"
   ]
   node [
     id 8
-    label "Social"
+    label "action.Social"
   ]
   edge [
     source 0
     target 1
-    weight 0.7179909086483292
+    weight 0.9416146101829713
   ]
   edge [
     source 1
     target 3
-    weight 0.8073410992107324
+    weight 0.5929248648839399
   ]
   edge [
     source 2
     target 1
-    weight 0.7626609043115826
+    weight 0.8772816807113669
   ]
   edge [
     source 4
     target 3
-    weight 0.2957776764753559
+    weight 0.730910948531461
   ]
   edge [
     source 5
     target 3
-    weight 0.8897793531820503
+    weight 0.48207533147067727
   ]
   edge [
     source 6
     target 3
-    weight 0.7182253560461352
+    weight 0.4161121133462483
   ]
   edge [
     source 7
     target 3
-    weight 0.2676155045535955
+    weight 0.8582026268906241
   ]
   edge [
     source 8
     target 3
-    weight 0.8439981513643751
+    weight 0.6924841798652416
   ]
 ]
