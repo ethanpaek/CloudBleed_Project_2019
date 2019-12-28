@@ -6,14 +6,14 @@ DG = nx.DiGraph()
 
 DG.add_weighted_edges_from([("action.Hacking", "action.Bugs", random()),
                             ("action.Malware", "action.Bugs", random()),
-                            ("action.Hacking", "action.Impact", random()),
-                            ("action.Malware", "action.Impact", random()),
-                            ("action.Bugs", "action.Impact", random()),
-                            ("action.Physical", "action.Impact", random()),
-                            ("action.Misuse", "action.Impact", random()),
-                            ("action.Error", "action.Impact", random()),
-                            ("action.Environmental", "action.Impact", random()),
-                            ("action.Social", "action.Impact", random())
+                            ("action.Hacking", "records_lost", random()),
+                            ("action.Malware", "records_lost", random()),
+                            ("action.Bugs", "records_lost", random()),
+                            ("action.Physical", "records_lost", random()),
+                            ("action.Misuse", "records_lost", random()),
+                            ("action.Error", "records_lost", random()),
+                            ("action.Environmental", "records_lost", random()),
+                            ("action.Social", "records_lost", random())
                             ])
 print(DG.out_degree("action.Bugs", weight='weight')) # total weight of edges directing out of "Bug" node
 print(DG.degree("action.Bugs", weight='weight')) # total weight of edges coming in and out of "Bug" node
