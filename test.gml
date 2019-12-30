@@ -43,61 +43,56 @@ graph [
   edge [
     source 0
     target 1
-    weight 0.18776449041812404
+    weight 0.547049251250979
   ]
   edge [
     source 0
     target 4
-    weight 0.15466146313122686
+    weight 0.6094601656080243
   ]
   edge [
     source 1
     target 4
-    weight 0.8092339469893044
+    weight 0.47873860853040284
   ]
   edge [
     source 2
     target 1
-    weight 0.07084459302772872
+    weight 0.45228713190773573
   ]
   edge [
     source 2
     target 4
-    weight 0.9782842549601242
+    weight 0.5943380204386354
   ]
   edge [
     source 3
     target 1
-    weight 0.19972041654107875
-  ]
-  edge [
-    source 3
-    target 4
-    weight 0.5168477701715871
+    weight 0.42285419989268114
   ]
   edge [
     source 5
     target 4
-    weight 0.9452765873146013
+    weight 0.8349849674528574
   ]
   edge [
     source 6
     target 4
-    weight 0.31845327044815464
+    weight 0.9982808611990593
   ]
   edge [
     source 7
     target 4
-    weight 0.07712379982065443
+    weight 0.6430363721940907
   ]
   edge [
     source 8
     target 4
-    weight 0.5430703250924662
+    weight 0.06729172136004447
   ]
   edge [
     source 9
     target 4
-    weight 0.5097854548647968
+    weight 0.9699108964641308
   ]
 ]

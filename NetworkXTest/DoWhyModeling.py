@@ -6,6 +6,9 @@ DG = nx.DiGraph()
 
 DG.add_weighted_edges_from([("action.Hacking", "action.Bugs", random()),
                             ("action.Malware", "action.Bugs", random()),
+                            ("emp_ord", "action.Bugs", random()),
+                            ("emp_ord", "records_lost", random()),
+                            ("action.Malware", "records_lost", random()),
                             ("action.Hacking", "records_lost", random()),
                             ("action.Malware", "records_lost", random()),
                             ("action.Bugs", "records_lost", random()),
